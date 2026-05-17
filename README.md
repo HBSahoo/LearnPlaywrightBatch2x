@@ -36,7 +36,7 @@ graph TB
             ch1["Ch 1: Basics ✅"]
             ch2["Ch 2: JS Concepts"]
             ch3["Ch 3: Identifiers & Literals"]
-            ch4["Ch 4: Operators"]
+            ch4["Ch 4: Operators ✅"]
             ch5["Ch 5: If / Else"]
             ch6["Ch 6: Switch"]
             ch7["Ch 7: Loops"]
@@ -107,6 +107,18 @@ LearnPlaywrightBatch2x/
 │   ├── js_identifier_rules.js
 │   ├── VS_Code_keyboard_shortcut_windows.md
 │   └── VS_Code_keyboard_shortcut_mac.md
+│
+│
+├── Chapter_04_Javascript_Concepts/      ✅ var, let, const, scope, hoisting
+│   ├── 09_var_let_const.js               # var/let/const basics & loop leaks
+│   ├── 10_functions.js                   # Defining & calling functions
+│   ├── 11_var_explained.js               # var: global vs function scope
+│   ├── 12_let_peope_love.js              # let: block scope, re-declaration rules
+│   ├── 13_const_explained.js             # const: immutability & block scope
+│   ├── 14_var_functionscope.js           # var function-scoping in detail
+│   ├── 15_let_scope.js                   # let block-scoping in detail
+│   ├── 16_Hoisting.js                    # var hoisting with undefined
+│   └── 17_hoisting_fn.js                 # Function-scoped hoisting
 │
 └── README.md                           👋 You are here
 ```
@@ -321,17 +333,51 @@ node Chapter03_Identifier_Literals/js_identifier_rules.js
 
 ---
 
+## 📖 What's in Chapter 4 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `09_var_let_const.js` | var / let / const | Differences, redeclaration, reassignment, loop leaks |
+| `10_functions.js` | Functions | Defining and calling functions in JavaScript |
+| `11_var_explained.js` | var Scope | Global scope vs function scope, var behavior |
+| `12_let_peope_love.js` | let Scope | Block scope, re-declaration rules, loyalty of let |
+| `13_const_explained.js` | const | Immutability, block scope, when to use const |
+| `14_var_functionscope.js` | var Deep Dive | Function-scoped var in nested blocks |
+| `15_let_scope.js` | let Deep Dive | Block-scoped let in nested blocks |
+| `16_Hoisting.js` | Hoisting Basics | How var declarations are hoisted with undefined |
+| `17_hoisting_fn.js` | Function Hoisting | Function-scoped hoisting behavior |
+
+### Run them
+
+```bash
+node Chapter_04_Javascript_Concepts/09_var_let_const.js
+node Chapter_04_Javascript_Concepts/10_functions.js
+node Chapter_04_Javascript_Concepts/11_var_explained.js
+node Chapter_04_Javascript_Concepts/12_let_peope_love.js
+node Chapter_04_Javascript_Concepts/13_const_explained.js
+node Chapter_04_Javascript_Concepts/14_var_functionscope.js
+node Chapter_04_Javascript_Concepts/15_let_scope.js
+node Chapter_04_Javascript_Concepts/16_Hoisting.js
+node Chapter_04_Javascript_Concepts/17_hoisting_fn.js
+```
+
+---
+
 ## 🔭 What's Coming Next
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Chapter 4: Operators"]
-        N1[Arithmetic Operators] --> N2[Comparison Operators]
-        N2 --> N3[Logical Operators]
-        N3 --> N4[Assignment Operators]
+    subgraph next["Next Up — Chapter 5: Control Flow"]
+        N1[If / Else] --> N2[Switch]
+        N2 --> N3[Ternary Operator]
     end
 
-    subgraph then["Then — Chapter 5: Control Flow"]
+    subgraph then["Then — Chapter 6: Loops"]
+        T1[For Loop] --> T2[While Loop]
+        T2 --> T3[For...of / For...in]
+    end
         T1[If / Else] --> T2[Switch]
         T2 --> T3[Ternary Operator]
     end
