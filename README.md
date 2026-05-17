@@ -35,10 +35,10 @@ graph TB
         subgraph js["📘 JavaScript (Weeks 1–6)"]
             ch1["Ch 1: Basics ✅"]
             ch2["Ch 2: JS Concepts"]
-            ch3["Ch 3: Identifiers & Literals"]
-            ch4["Ch 4: Operators ✅"]
-            ch5["Ch 5: If / Else"]
-            ch6["Ch 6: Switch"]
+            ch3["Ch 3: Identifiers & Literals ✅"]
+            ch4["Ch 4: Operators & Concepts ✅"]
+            ch5["Ch 5: Literals ✅"]
+            ch6["Ch 6: If / Else"]
             ch7["Ch 7: Loops"]
             ch8["Ch 8: Arrays"]
             ch9["Ch 9: Functions"]
@@ -118,7 +118,21 @@ LearnPlaywrightBatch2x/
 │   ├── 14_var_functionscope.js           # var function-scoping in detail
 │   ├── 15_let_scope.js                   # let block-scoping in detail
 │   ├── 16_Hoisting.js                    # var hoisting with undefined
-│   └── 17_hoisting_fn.js                 # Function-scoped hoisting
+│   ├── 17_hoisting_fn.js                 # Function-scoped hoisting
+│   ├── 18_let_hoisting.js                # let hoisting & Temporal Dead Zone (TDZ)
+│   ├── 19_let_hoisting_block.js          # block-scoped let hoisting behavior
+│   ├── 20_let_const.js                   # const TDZ demo
+│   ├── 21_Jr_QA.js                       # common junior QA interview question
+│
+├── chapter_05_Literal/                   ✅ Literals — numbers, strings, template literals, null/undefined
+│   ├── 22_Literal.js                     # typeof all literal types
+│   ├── 23_null_undefined.js              # null vs undefined deep dive
+│   ├── 24_null.js                        # null usage examples
+│   ├── 25_Literal_All.js                 # integer & hex/octal literals
+│   ├── 26_Literal_Number_all.js          # all number types, BigInt, Infinity, NaN
+│   ├── 27_String.js                      # single vs double quotes
+│   ├── 28_Template_Literal.js            # backticks & variable interpolation
+│   └── 29_Backtick_single_double.js      # quote comparison table
 │
 └── README.md                           👋 You are here
 ```
@@ -348,6 +362,10 @@ node Chapter03_Identifier_Literals/js_identifier_rules.js
 | `15_let_scope.js` | let Deep Dive | Block-scoped let in nested blocks |
 | `16_Hoisting.js` | Hoisting Basics | How var declarations are hoisted with undefined |
 | `17_hoisting_fn.js` | Function Hoisting | Function-scoped hoisting behavior |
+| `18_let_hoisting.js` | let Hoisting | Temporal Dead Zone (TDZ) with let |
+| `19_let_hoisting_block.js` | Block Hoisting | Block-scoped let hoisting behavior |
+| `20_let_const.js` | const TDZ | const temporal dead zone demo |
+| `21_Jr_QA.js` | Jr QA Question | Common junior QA interview question on hoisting |
 
 ### Run them
 
@@ -361,6 +379,40 @@ node Chapter_04_Javascript_Concepts/14_var_functionscope.js
 node Chapter_04_Javascript_Concepts/15_let_scope.js
 node Chapter_04_Javascript_Concepts/16_Hoisting.js
 node Chapter_04_Javascript_Concepts/17_hoisting_fn.js
+node Chapter_04_Javascript_Concepts/18_let_hoisting.js
+node Chapter_04_Javascript_Concepts/19_let_hoisting_block.js
+node Chapter_04_Javascript_Concepts/20_let_const.js
+node Chapter_04_Javascript_Concepts/21_Jr_QA.js
+```
+
+---
+
+## 📖 What's in Chapter 5 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `22_Literal.js` | Literal Types | typeof string, number, boolean, null, undefined |
+| `23_null_undefined.js` | null vs undefined | Deep dive, comparisons, when to use what |
+| `24_null.js` | null Examples | Practical null usage examples |
+| `25_Literal_All.js` | Integer Literals | Decimal, hex, octal, exponential notation |
+| `26_Literal_Number_all.js` | All Number Types | Binary, BigInt, Infinity, NaN, Number properties |
+| `27_String.js` | Strings | Single quotes vs double quotes |
+| `28_Template_Literal.js` | Template Literals | Backticks, variable interpolation, real Playwright examples |
+| `29_Backtick_single_double.js` | Quote Comparison | Feature table: '' / "" vs `` |
+
+### Run them
+
+```bash
+node chapter_05_Literal/22_Literal.js
+node chapter_05_Literal/23_null_undefined.js
+node chapter_05_Literal/24_null.js
+node chapter_05_Literal/25_Literal_All.js
+node chapter_05_Literal/26_Literal_Number_all.js
+node chapter_05_Literal/27_String.js
+node chapter_05_Literal/28_Template_Literal.js
+node chapter_05_Literal/29_Backtick_single_double.js
 ```
 
 ---
@@ -369,12 +421,12 @@ node Chapter_04_Javascript_Concepts/17_hoisting_fn.js
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Chapter 5: Control Flow"]
+    subgraph next["Next Up — Chapter 6: Control Flow"]
         N1[If / Else] --> N2[Switch]
         N2 --> N3[Ternary Operator]
     end
 
-    subgraph then["Then — Chapter 6: Loops"]
+    subgraph then["Then — Chapter 7: Loops"]
         T1[For Loop] --> T2[While Loop]
         T2 --> T3[For...of / For...in]
     end
