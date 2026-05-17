@@ -38,11 +38,11 @@ graph TB
             ch3["Ch 3: Identifiers & Literals ✅"]
             ch4["Ch 4: Operators & Concepts ✅"]
             ch5["Ch 5: Literals ✅"]
-            ch6["Ch 6: If / Else"]
-            ch7["Ch 7: Loops"]
-            ch8["Ch 8: Arrays"]
-            ch9["Ch 9: Functions"]
-            ch10["Ch 10: Strings"]
+            ch6["Ch 6: Operators ✅"]
+            ch7["Ch 7: If / Else"]
+            ch8["Ch 8: Loops"]
+            ch9["Ch 9: Arrays"]
+            ch10["Ch 10: Functions"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
@@ -133,6 +133,19 @@ LearnPlaywrightBatch2x/
 │   ├── 27_String.js                      # single vs double quotes
 │   ├── 28_Template_Literal.js            # backticks & variable interpolation
 │   └── 29_Backtick_single_double.js      # quote comparison table
+│
+├── chapter_06_Operator/                  ✅ Operators — arithmetic, comparison, logical, ternary
+│   ├── 30_Operator.js                    # Assignment operators
+│   ├── 31_Arithmetic_OP.js               # +, -, *, / basics
+│   ├── 32_Modulus_OP.js                  # % remainder & odd/even check
+│   ├── 33_Expo_OP.js                     # ** exponentiation
+│   ├── 34_IQ.js                          # Compound assignment operators
+│   ├── 35_Comparsion_OP.js               # >, <, >=, <=, ==, ===
+│   ├── 36_Comparsion_Strict_loose.js     # Loose vs strict equality
+│   ├── 37_IQ_Loose_Strict.js             # Tricky loose equality gotchas
+│   ├── 38_Confusing_Comparsion.js        # Deep dive: == vs === edge cases
+│   ├── 39_Logical_Op.js                  # &&, ||, ! logical gates
+│   └── 40_String_Con_Op.js               # String concatenation with +=
 │
 └── README.md                           👋 You are here
 ```
@@ -417,21 +430,54 @@ node chapter_05_Literal/29_Backtick_single_double.js
 
 ---
 
+## 📖 What's in Chapter 6 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `30_Operator.js` | Assignment Operators | `=` to assign values to variables |
+| `31_Arithmetic_OP.js` | Arithmetic Operators | `+`, `-`, `*`, `/` with variables |
+| `32_Modulus_OP.js` | Modulus Operator | `%` remainder, odd/even check |
+| `33_Expo_OP.js` | Exponentiation | `**` operator for powers |
+| `34_IQ.js` | Compound Operators | `+=`, `-=`, `*=`, `/=`, `%=` shorthand |
+| `35_Comparsion_OP.js` | Comparison Operators | `>`, `<`, `>=`, `<=`, `==`, `===` basics |
+| `36_Comparsion_Strict_loose.js` | Loose vs Strict | `==` coercion surprises vs `===` safety |
+| `37_IQ_Loose_Strict.js` | Tricky Equality | Transitivity breaks, `null`, `undefined` gotchas |
+| `38_Confusing_Comparsion.js` | Edge Case Deep Dive | `[]`, `{}`, `NaN`, `null >= 0` and more |
+| `39_Logical_Op.js` | Logical Operators | `&&` (AND), `||` (OR), `!` (NOT) |
+| `40_String_Con_Op.js` | String Concatenation | Using `+=` to build strings |
+
+### Run them
+
+```bash
+node chapter_06_Operator/30_Operator.js
+node chapter_06_Operator/31_Arithmetic_OP.js
+node chapter_06_Operator/32_Modulus_OP.js
+node chapter_06_Operator/33_Expo_OP.js
+node chapter_06_Operator/34_IQ.js
+node chapter_06_Operator/35_Comparsion_OP.js
+node chapter_06_Operator/36_Comparsion_Strict_loose.js
+node chapter_06_Operator/37_IQ_Loose_Strict.js
+node chapter_06_Operator/38_Confusing_Comparsion.js
+node chapter_06_Operator/39_Logical_Op.js
+node chapter_06_Operator/40_String_Con_Op.js
+```
+
+---
+
 ## 🔭 What's Coming Next
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Chapter 6: Control Flow"]
+    subgraph next["Next Up — Chapter 7: Control Flow"]
         N1[If / Else] --> N2[Switch]
         N2 --> N3[Ternary Operator]
     end
 
-    subgraph then["Then — Chapter 7: Loops"]
+    subgraph then["Then — Chapter 8: Loops"]
         T1[For Loop] --> T2[While Loop]
         T2 --> T3[For...of / For...in]
-    end
-        T1[If / Else] --> T2[Switch]
-        T2 --> T3[Ternary Operator]
     end
 
     next --> then
