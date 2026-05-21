@@ -447,6 +447,16 @@ node chapter_05_Literal/29_Backtick_single_double.js
 | `38_Confusing_Comparsion.js` | Edge Case Deep Dive | `[]`, `{}`, `NaN`, `null >= 0` and more |
 | `39_Logical_Op.js` | Logical Operators | `&&` (AND), `||` (OR), `!` (NOT) |
 | `40_String_Con_Op.js` | String Concatenation | Using `+=` to build strings |
+| `41_Ternary_Op.js` | Ternary Operator | `? :` conditional expressions |
+| `42_Type_Op.js` | Type Operators | `typeof` for all literal types |
+| `43_Incre_Decre_Op.js` | Pre Increment / Decrement | `++a`, `--a` behavior |
+| `44_Null_Op.js` | Nullish Coalescing | `??` operator and `null` comparisons |
+| `45_Post_Incre_Decr op.js` | Post Increment / Decrement | `a++`, `a--` behavior |
+| `46_IQ_INCREMENT_D.js` | Interview Questions | Tricky increment / decrement outputs |
+| `47_Advance_ID_.js` | Advanced Increment / Decrement | Complex prefix / postfix expressions |
+| `18May_Task01_Ternary_Op.js` | Task: Ternary (2 numbers) | Find maximum of two numbers |
+| `18May_Task02_Ternary_Op.js` | Task: Ternary (3 numbers) | Find maximum of three numbers |
+| `18May_Task03_Incre_Decre_Op.js` | Task: Increment / Decrement | Evaluate complex `++` / `--` expressions |
 
 ### Run them
 
@@ -462,6 +472,16 @@ node chapter_06_Operator/37_IQ_Loose_Strict.js
 node chapter_06_Operator/38_Confusing_Comparsion.js
 node chapter_06_Operator/39_Logical_Op.js
 node chapter_06_Operator/40_String_Con_Op.js
+node chapter_06_Operator/41_Ternary_Op.js
+node chapter_06_Operator/42_Type_Op.js
+node chapter_06_Operator/43_Incre_Decre_Op.js
+node chapter_06_Operator/44_Null_Op.js
+node "chapter_06_Operator/45_Post_Incre_Decr op.js"
+node chapter_06_Operator/46_IQ_INCREMENT_D.js
+node chapter_06_Operator/47_Advance_ID_.js
+node chapter_06_Operator/18May_Task01_Ternary_Op.js
+node chapter_06_Operator/18May_Task02_Ternary_Op.js
+node chapter_06_Operator/18May_Task03_Incre_Decre_Op.js
 ```
 
 ---
