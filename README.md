@@ -34,15 +34,17 @@ graph TB
 
         subgraph js["📘 JavaScript (Weeks 1–6)"]
             ch1["Ch 1: Basics ✅"]
-            ch2["Ch 2: JS Concepts"]
+            ch2["Ch 2: JS Concepts ✅"]
             ch3["Ch 3: Identifiers & Literals ✅"]
             ch4["Ch 4: Operators & Concepts ✅"]
             ch5["Ch 5: Literals ✅"]
             ch6["Ch 6: Operators ✅"]
-            ch7["Ch 7: If / Else"]
-            ch8["Ch 8: Loops"]
-            ch9["Ch 9: Arrays"]
-            ch10["Ch 10: Functions"]
+            ch7["Ch 7: If / Else ✅"]
+            ch8["Ch 8: Switch ✅"]
+            ch9["Ch 9: User Input ✅"]
+            ch10["Ch 10: Loops"]
+            ch11["Ch 11: Arrays"]
+            ch12["Ch 12: Functions"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
@@ -146,6 +148,40 @@ LearnPlaywrightBatch2x/
 │   ├── 38_Confusing_Comparsion.js        # Deep dive: == vs === edge cases
 │   ├── 39_Logical_Op.js                  # &&, ||, ! logical gates
 │   └── 40_String_Con_Op.js               # String concatenation with +=
+│
+├── chapter_07_If_else/                    ✅ If / Else — conditional statements
+│   ├── 48_IF_ESLE.js                     # Basic if/else syntax
+│   ├── 49_If_elseif_else.js              # if/else if/else ladder
+│   ├── 50_REAL_IF_ELSE.js                # Real-world examples
+│   ├── 51_API_IF_ELSE.js                 # API response handling
+│   ├── 52_IQ_IF_ELSE.js                  # Interview questions
+│   ├── 53_IF_ELSE_real.js                # Practical if/else scenarios
+│   ├── 54_IQ.js                          # IQ puzzles with if/else
+│   ├── 55_IE.js                          # if/else expressions
+│   ├── 56_IQ_EVEN_ODD.js                 # Even/odd checker
+│   ├── 57_Grade_Calc.js                  # Grade calculator
+│   ├── 58_LEAP_YEAR.js                   # Leap year checker
+│   ├── 20May_Task01_http_statusCode.js   # Task: HTTP status categorizer
+│   ├── 20May_Task02_passfail_verdict.js  # Task: Pass/fail verdict
+│   ├── 20May_Task03_Bug_severity.js      # Task: Bug severity classifier
+│   ├── 20May_Task04_BuildHealth_reporter.js  # Task: Build health reporter
+│   └── 20May_Task05_Login_Logout.js      # Task: Login/Logout flow
+│
+├── chapter_08_Switch_Statement/           ✅ Switch — case-based control flow
+│   ├── 59_Switch.js                      # Basic switch statement
+│   ├── 60_No_Break.js                    # Fall-through behavior
+│   ├── 61_Default.js                     # Default case handling
+│   ├── 62_REAL_TIME_EXAMPLE.js           # Real-world switch examples
+│   ├── 63_Switch_Group.js                # Grouped case statements
+│   ├── 64_IQ.js                          # Interview questions
+│   ├── 65_IQ2.js                         # More IQ puzzles
+│   ├── 66_IQ3.js                         # Switch challenge problems
+│   └── 67_IQ4.js                         # Advanced switch patterns
+│
+├── chapter_09_UserInput/                  ✅ User Input — prompt, readline
+│   ├── 68_User_Input.js                   # Browser prompt() input
+│   ├── 69_Node_readline.js               # Node.js readline module
+│   └── 70_prompt_sync.js                 # Synchronous prompt with prompt-sync
 │
 └── README.md                           👋 You are here
 ```
@@ -486,24 +522,128 @@ node chapter_06_Operator/18May_Task03_Incre_Decre_Op.js
 
 ---
 
+## 📖 What's in Chapter 7 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `48_IF_ESLE.js` | If / Else Basics | Basic conditional statement syntax |
+| `49_If_elseif_else.js` | If / Else If | Multiple condition ladder |
+| `50_REAL_IF_ELSE.js` | Real Examples | Practical if/else use cases |
+| `51_API_IF_ELSE.js` | API Handling | Using if/else with API responses |
+| `52_IQ_IF_ELSE.js` | IQ Questions | Interview-style if/else problems |
+| `53_IF_ELSE_real.js` | Practical Scenarios | Real-world conditional logic |
+| `54_IQ.js` | IQ Puzzles | Brain teasers with conditionals |
+| `55_IE.js` | Expressions | if/else expressions |
+| `56_IQ_EVEN_ODD.js` | Even/Odd | Number parity checker |
+| `57_Grade_Calc.js` | Grade Calculator | Calculate grades from scores |
+| `58_LEAP_YEAR.js` | Leap Year | Check if a year is a leap year |
+| `20May_Task01_http_statusCode.js` | Task: HTTP Status | Categorize HTTP status codes |
+| `20May_Task02_passfail_verdict.js` | Task: Pass/Fail | Generate test verdicts |
+| `20May_Task03_Bug_severity.js` | Task: Bug Severity | Classify bug severity levels |
+| `20May_Task04_BuildHealth_reporter.js` | Task: Build Health | Report build health status |
+| `20May_Task05_Login_Logout.js` | Task: Login Flow | Simulate login/logout logic |
+
+### Run them
+
+```bash
+node chapter_07_If_else/48_IF_ESLE.js
+node chapter_07_If_else/49_If_elseif_else.js
+node chapter_07_If_else/50_REAL_IF_ELSE.js
+node chapter_07_If_else/51_API_IF_ELSE.js
+node chapter_07_If_else/52_IQ_IF_ELSE.js
+node chapter_07_If_else/53_IF_ELSE_real.js
+node chapter_07_If_else/54_IQ.js
+node chapter_07_If_else/55_IE.js
+node chapter_07_If_else/56_IQ_EVEN_ODD.js
+node chapter_07_If_else/57_Grade_Calc.js
+node chapter_07_If_else/58_LEAP_YEAR.js
+node chapter_07_If_else/20May_Task01_http_statusCode.js
+node chapter_07_If_else/20May_Task02_passfail_verdict.js
+node chapter_07_If_else/20May_Task03_Bug_severity.js
+node chapter_07_If_else/20May_Task04_BuildHealth_reporter.js
+node chapter_07_If_else/20May_Task05_Login_Logout.js
+```
+
+---
+
+## 📖 What's in Chapter 8 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `59_Switch.js` | Switch Basics | Basic switch statement syntax |
+| `60_No_Break.js` | Fall-through | Behavior without break keyword |
+| `61_Default.js` | Default Case | Handling unmatched cases |
+| `62_REAL_TIME_EXAMPLE.js` | Real Examples | Practical switch use cases |
+| `63_Switch_Group.js` | Grouped Cases | Multiple cases with same output |
+| `64_IQ.js` | IQ Questions | Interview-style switch problems |
+| `65_IQ2.js` | More IQ | Additional switch puzzles |
+| `66_IQ3.js` | Challenges | Switch statement challenges |
+| `67_IQ4.js` | Advanced | Complex switch patterns |
+
+### Run them
+
+```bash
+node chapter_08_Switch_Statement/59_Switch.js
+node chapter_08_Switch_Statement/60_No_Break.js
+node chapter_08_Switch_Statement/61_Default.js
+node chapter_08_Switch_Statement/62_REAL_TIME_EXAMPLE.js
+node chapter_08_Switch_Statement/63_Switch_Group.js
+node chapter_08_Switch_Statement/64_IQ.js
+node chapter_08_Switch_Statement/65_IQ2.js
+node chapter_08_Switch_Statement/66_IQ3.js
+node chapter_08_Switch_Statement/67_IQ4.js
+```
+
+---
+
+## 📖 What's in Chapter 9 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `68_User_Input.js` | Browser Input | Using `prompt()` in browser environments |
+| `69_Node_readline.js` | Node Readline | Using Node.js readline module |
+| `70_prompt_sync.js` | Synchronous Prompt | Using prompt-sync package |
+
+### Run them
+
+```bash
+node chapter_09_UserInput/68_User_Input.js
+node chapter_09_UserInput/69_Node_readline.js
+node chapter_09_UserInput/70_prompt_sync.js
+```
+
+---
+
 ## 🔭 What's Coming Next
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Chapter 7: Control Flow"]
-        N1[If / Else] --> N2[Switch]
-        N2 --> N3[Ternary Operator]
+    subgraph next["Next Up — Chapter 10: Loops"]
+        N1[For Loop] --> N2[While Loop]
+        N2 --> N3[For...of / For...in]
     end
 
-    subgraph then["Then — Chapter 8: Loops"]
-        T1[For Loop] --> T2[While Loop]
-        T2 --> T3[For...of / For...in]
+    subgraph then["Then — Chapter 11: Arrays"]
+        T1[Array Basics] --> T2[Array Methods]
+        T2 --> T3[2D Arrays]
     end
 
-    next --> then
+    subgraph then2["Then — Chapter 12: Functions"]
+        F1[Function Declaration] --> F2[Arrow Functions]
+        F2 --> F3[Higher-Order Functions]
+    end
+
+    next --> then --> then2
 
     style next fill:#fff3e0,stroke:#e65100
     style then fill:#e8eaf6,stroke:#3f51b5
+    style then2 fill:#e0f7fa,stroke:#00838f
 ```
 
 ---
