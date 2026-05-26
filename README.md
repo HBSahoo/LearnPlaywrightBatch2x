@@ -42,7 +42,7 @@ graph TB
             ch7["Ch 7: If / Else ✅"]
             ch8["Ch 8: Switch ✅"]
             ch9["Ch 9: User Input ✅"]
-            ch10["Ch 10: Loops"]
+            ch10["Ch 10: Loops ✅"]
             ch11["Ch 11: Arrays"]
             ch12["Ch 12: Functions"]
         end
@@ -182,6 +182,22 @@ LearnPlaywrightBatch2x/
 │   ├── 68_User_Input.js                   # Browser prompt() input
 │   ├── 69_Node_readline.js               # Node.js readline module
 │   └── 70_prompt_sync.js                 # Synchronous prompt with prompt-sync
+│
+├── chapter_10_Loops/                      ✅ Loops — for, while, do...while, for...of, for...in
+│   ├── 71_For_loop.js                    # For loop basics
+│   ├── 72_For_loop.js                    # For loop variations
+│   ├── 73_For_Loop2.js                   # More for loop examples
+│   ├── 74_IQ.js                          # Loop interview questions
+│   ├── 75_For_OF_IN_EACH.js              # for...of vs for...in
+│   ├── 76_While.js                       # While loop basics
+│   ├── 77_Do_While.js                    # Do...while loop
+│   ├── 78_Do_While.js                    # Do...while variations
+│   ├── 79_IQ.js                          # Loop IQ puzzles
+│   ├── 80_IQ.js                          # More loop challenges
+│   ├── 81_IQ.js                          # Advanced loop problems
+│   ├── 82_IQ.js                          # Loop edge cases
+│   ├── 22May_Task01_Triangles.js         # Task: Triangle patterns
+│   └── 22May_Task02_Fizz_Buzz.js        # Task: FizzBuzz problem
 │
 └── README.md                           👋 You are here
 ```
@@ -620,23 +636,65 @@ node chapter_09_UserInput/70_prompt_sync.js
 
 ---
 
+## 📖 What's in Chapter 10 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `71_For_loop.js` | For Loop Basics | Basic `for` loop syntax and usage |
+| `72_For_loop.js` | For Loop Variations | Different ways to write for loops |
+| `73_For_Loop2.js` | More For Loops | Additional for loop examples |
+| `74_IQ.js` | IQ Questions | Interview-style loop problems |
+| `75_For_OF_IN_EACH.js` | for...of vs for...in | Iterating arrays and objects |
+| `76_While.js` | While Loop | Basic `while` loop syntax |
+| `77_Do_While.js` | Do...While Loop | `do...while` loop basics |
+| `78_Do_While.js` | Do...While Variations | More do...while examples |
+| `79_IQ.js` | Loop IQ Puzzles | Tricky loop problems |
+| `80_IQ.js` | More Loop Challenges | Additional loop puzzles |
+| `81_IQ.js` | Advanced Loop Problems | Complex loop scenarios |
+| `82_IQ.js` | Loop Edge Cases | Edge cases with loops |
+| `22May_Task01_Triangles.js` | Task: Triangles | Print triangle patterns with loops |
+| `22May_Task02_Fizz_Buzz.js` | Task: FizzBuzz | Classic FizzBuzz problem |
+
+### Run them
+
+```bash
+node chapter_10_Loops/71_For_loop.js
+node chapter_10_Loops/72_For_loop.js
+node chapter_10_Loops/73_For_Loop2.js
+node chapter_10_Loops/74_IQ.js
+node chapter_10_Loops/75_For_OF_IN_EACH.js
+node chapter_10_Loops/76_While.js
+node chapter_10_Loops/77_Do_While.js
+node chapter_10_Loops/78_Do_While.js
+node chapter_10_Loops/79_IQ.js
+node chapter_10_Loops/80_IQ.js
+node chapter_10_Loops/81_IQ.js
+node chapter_10_Loops/82_IQ.js
+node chapter_10_Loops/22May_Task01_Triangles.js
+node chapter_10_Loops/22May_Task02_Fizz_Buzz.js
+```
+
+---
+
 ## 🔭 What's Coming Next
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Chapter 10: Loops"]
-        N1[For Loop] --> N2[While Loop]
-        N2 --> N3[For...of / For...in]
+    subgraph next["Next Up — Chapter 11: Arrays"]
+        N1[Array Basics] --> N2[Array Methods]
+        N2 --> N3[2D Arrays]
     end
 
-    subgraph then["Then — Chapter 11: Arrays"]
-        T1[Array Basics] --> T2[Array Methods]
-        T2 --> T3[2D Arrays]
+    subgraph then["Then — Chapter 12: Functions"]
+        T1[Function Declaration] --> T2[Arrow Functions]
+        T2 --> T3[Higher-Order Functions]
     end
 
-    subgraph then2["Then — Chapter 12: Functions"]
-        F1[Function Declaration] --> F2[Arrow Functions]
-        F2 --> F3[Higher-Order Functions]
+    subgraph then2["Then — Advanced JS"]
+        F1[Objects] --> F2[Callbacks]
+        F2 --> F3[Promises]
     end
 
     next --> then --> then2
