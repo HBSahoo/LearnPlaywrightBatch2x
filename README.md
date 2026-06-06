@@ -43,7 +43,7 @@ graph TB
             ch8["Ch 8: Switch ✅"]
             ch9["Ch 9: User Input ✅"]
             ch10["Ch 10: Loops ✅"]
-            ch11["Ch 11: Arrays"]
+            ch11["Ch 11: Arrays ✅"]
             ch12["Ch 12: Functions"]
         end
 
@@ -199,6 +199,17 @@ LearnPlaywrightBatch2x/
 │   ├── 22May_Task01_Triangles.js         # Task: Triangle patterns
 │   └── 22May_Task02_Fizz_Buzz.js        # Task: FizzBuzz problem
 │
+├── chapter_11_Arrays/                    ✅ Arrays — creation, access, add/remove, search, iterate, transform
+│   ├── 83_Arrays.js                      # Array basics & creation
+│   ├── 84_Arrays.js                      # Array constructor methods
+│   ├── 85_Access_Array.js                # Accessing & modifying elements
+│   ├── 86_Arrays_Adding_Remove.js        # push, pop, unshift, shift
+│   ├── 87_Adding_Remove2.js              # splice for add/remove/replace
+│   ├── 88_REAL_Example.js                # Real-world array operations
+│   ├── 89_Searching.js                   # indexOf, lastIndexOf, includes, find
+│   ├── 90_Iterate.js                     # Iterating arrays (for, for...of, forEach, for...in)
+│   └── 91_Transform_Array.js             # map, filter, reduce, flat
+│
 └── README.md                           👋 You are here
 ```
 
@@ -257,9 +268,9 @@ journey
         Switch: 3: Ch6
         Loops: 4: Ch7
     section Data & Functions (Wk 5-6)
-        Arrays: 5: Ch8
-        Functions: 5: Ch9
-        Strings & Objects: 4: Ch10-11
+        Arrays: 5: Ch11 ✅
+        Functions: 5: Ch12
+        Strings & Objects: 4: Ch10,13
     section Advanced JS (Wk 7-8)
         2D Arrays: 3: Ch12
         Callbacks & Promises: 5: Ch13-14
@@ -279,8 +290,8 @@ journey
 | 2 | Variables & Hoisting | Ch 2 | Master `var`/`let`/`const` |
 | 3 | Identifiers, Literals, Operators | Ch 3–4 | Read/write any expression |
 | 4 | Control Flow | Ch 5–7 | If/else, switch, loops |
-| 5 | Arrays & Functions | Ch 8–9 | Manipulate data confidently |
-| 6 | Strings & Objects | Ch 10–11 | Use JS data structures |
+| 5 | Arrays & Functions | Ch 11–12 | Manipulate data confidently |
+| 6 | Strings & Objects | Ch 10, 13 | Use JS data structures |
 | 7 | Async (Callbacks → Promises) | Ch 12–14 | Handle async work |
 | 8 | Async/Await + OOP | Ch 15–17 | Modern async, classes |
 | 9 | TypeScript | Ch 18–22 | Type-safe automation code |
@@ -678,23 +689,55 @@ node chapter_10_Loops/22May_Task02_Fizz_Buzz.js
 
 ---
 
+## 📖 What's in Chapter 11 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `83_Arrays.js` | Array Basics | Creating arrays, empty arrays, mixed types |
+| `84_Arrays.js` | Array Creation | Array literal, constructor, `Array.of()`, `Array.from()` |
+| `85_Access_Array.js` | Access & Modify | Index access, `at()`, negative indexing, modifying elements |
+| `86_Arrays_Adding_Remove.js` | Add/Remove Basics | `push()`, `pop()`, `unshift()`, `shift()` |
+| `87_Adding_Remove2.js` | Splice | `splice()` for add, remove, and replace operations |
+| `88_REAL_Example.js` | Real Example | Practical array operations with browser lists |
+| `89_Searching.js` | Searching | `indexOf()`, `lastIndexOf()`, `includes()`, `find()`, `findIndex()`, `findLast()`, `findLastIndex()` |
+| `90_Iterate.js` | Iteration | `for`, `for...of`, `forEach()`, `for...in`, `entries()` |
+| `91_Transform_Array.js` | Transform | `map()`, `filter()`, `reduce()`, `flat()` |
+
+### Run them
+
+```bash
+node chapter_11_Arrays/83_Arrays.js
+node chapter_11_Arrays/84_Arrays.js
+node chapter_11_Arrays/85_Access_Array.js
+node chapter_11_Arrays/86_Arrays_Adding_Remove.js
+node chapter_11_Arrays/87_Adding_Remove2.js
+node chapter_11_Arrays/88_REAL_Example.js
+node chapter_11_Arrays/89_Searching.js
+node chapter_11_Arrays/90_Iterate.js
+node chapter_11_Arrays/91_Transform_Array.js
+```
+
+---
+
 ## 🔭 What's Coming Next
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Chapter 11: Arrays"]
-        N1[Array Basics] --> N2[Array Methods]
-        N2 --> N3[2D Arrays]
+    subgraph next["Next Up — Chapter 12: Functions"]
+        N1[Function Declaration] --> N2[Arrow Functions]
+        N2 --> N3[Higher-Order Functions]
     end
 
-    subgraph then["Then — Chapter 12: Functions"]
-        T1[Function Declaration] --> T2[Arrow Functions]
-        T2 --> T3[Higher-Order Functions]
+    subgraph then["Then — Advanced JS"]
+        T1[Objects] --> T2[Callbacks]
+        T2 --> T3[Promises]
     end
 
-    subgraph then2["Then — Advanced JS"]
-        F1[Objects] --> F2[Callbacks]
-        F2 --> F3[Promises]
+    subgraph then2["Then — TypeScript & Playwright"]
+        F1[TS Basics] --> F2[Playwright Setup]
+        F2 --> F3[CI & AI]
     end
 
     next --> then --> then2
