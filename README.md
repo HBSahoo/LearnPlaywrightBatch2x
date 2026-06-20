@@ -15,6 +15,8 @@
 This repository is your **week-by-week course companion** for the LearnPlaywright Batch 2x cohort by [The Testing Academy](https://thetestingacademy.com). Code shown in lectures lands here so you can read it, run it, and practice on it.
 
 > Content gets added **as we progress through the batch** — so check back after every class.
+>
+> **Last updated:** 27th May 2026 — Class code committed
 
 ### What you'll learn
 
