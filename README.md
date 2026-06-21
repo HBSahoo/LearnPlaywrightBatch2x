@@ -16,7 +16,7 @@ This repository is your **week-by-week course companion** for the LearnPlaywrigh
 
 > Content gets added **as we progress through the batch** — so check back after every class.
 >
-> **Last updated:** 27th May 2026 — Class code committed
+> **Last updated:** 27th May 2026 — Class code committed (Arrays: sort, slice, concat, checking + Functions basics)
 
 ### What you'll learn
 
@@ -46,7 +46,7 @@ graph TB
             ch9["Ch 9: User Input ✅"]
             ch10["Ch 10: Loops ✅"]
             ch11["Ch 11: Arrays ✅"]
-            ch12["Ch 12: Functions"]
+            ch12["Ch 12: Functions ✅"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
@@ -210,7 +210,21 @@ LearnPlaywrightBatch2x/
 │   ├── 88_REAL_Example.js                # Real-world array operations
 │   ├── 89_Searching.js                   # indexOf, lastIndexOf, includes, find
 │   ├── 90_Iterate.js                     # Iterating arrays (for, for...of, forEach, for...in)
-│   └── 91_Transform_Array.js             # map, filter, reduce, flat
+│   ├── 91_Transform_Array.js             # map, filter, reduce, flat
+│   ├── 92_Arrays.js                      # Array sorting (lexicographic & numeric)
+│   ├── 93_Array_Slicing.js               # slice vs splice — non-mutating vs mutating
+│   ├── 94_Concat_array.js                # concat, spread (...), join
+│   ├── 95_Array_Checking.js              # Array.isArray, every, some
+│
+├── chapter_12_Funtions/                  ✅ Functions — declaration, expression, arrow
+│   ├── 96_Functions.js                   # Function definition & calling basics
+│   ├── 97_Type1_Fn_Basic_Functions.js    # Type 1: no param, no return
+│   ├── 98_Type2_Fn_With_Param_No_Return.js # Type 2: with param, no return
+│   ├── 99_Type3_Fn_without_Param_Return_Type.js # Type 3: no param, with return
+│   ├── 100_Type4_Fn_With_Param_With_Return.js # Type 4: with param, with return
+│   ├── 101_Template_literal.js           # Template literals inside functions
+│   ├── 102_Fn_Expression.js              # Function expressions
+│   └── 103_Arrow_Fn.js                   # Arrow functions (ES6)
 │
 └── README.md                           👋 You are here
 ```
@@ -706,6 +720,10 @@ node chapter_10_Loops/22May_Task02_Fizz_Buzz.js
 | `89_Searching.js` | Searching | `indexOf()`, `lastIndexOf()`, `includes()`, `find()`, `findIndex()`, `findLast()`, `findLastIndex()` |
 | `90_Iterate.js` | Iteration | `for`, `for...of`, `forEach()`, `for...in`, `entries()` |
 | `91_Transform_Array.js` | Transform | `map()`, `filter()`, `reduce()`, `flat()` |
+| `92_Arrays.js` | Sorting | `sort()`, lexicographic vs numeric sorting, ascending/descending |
+| `93_Array_Slicing.js` | Slice vs Splice | `slice()` (non-mutating) vs `splice()` (mutating) |
+| `94_Concat_array.js` | Combine & Join | `concat()`, spread `...`, `join()` |
+| `95_Array_Checking.js` | Checking | `Array.isArray()`, `every()`, `some()` |
 
 ### Run them
 
@@ -719,6 +737,40 @@ node chapter_11_Arrays/88_REAL_Example.js
 node chapter_11_Arrays/89_Searching.js
 node chapter_11_Arrays/90_Iterate.js
 node chapter_11_Arrays/91_Transform_Array.js
+node chapter_11_Arrays/92_Arrays.js
+node chapter_11_Arrays/93_Array_Slicing.js
+node chapter_11_Arrays/94_Concat_array.js
+node chapter_11_Arrays/95_Array_Checking.js
+```
+
+---
+
+## 📖 What's in Chapter 12 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `96_Functions.js` | Function Basics | Defining and calling a function |
+| `97_Type1_Fn_Basic_Functions.js` | Type 1 | No parameter, no return |
+| `98_Type2_Fn_With_Param_No_Return.js` | Type 2 | With parameter, no return |
+| `99_Type3_Fn_without_Param_Return_Type.js` | Type 3 | No parameter, with return |
+| `100_Type4_Fn_With_Param_With_Return.js` | Type 4 | With parameter, with return |
+| `101_Template_literal.js` | Template Literals | Using backticks & `${}` inside functions |
+| `102_Fn_Expression.js` | Function Expression | Assigning functions to variables |
+| `103_Arrow_Fn.js` | Arrow Functions | ES6 arrow `=>` syntax, implicit return |
+
+### Run them
+
+```bash
+node chapter_12_Funtions/96_Functions.js
+node chapter_12_Funtions/97_Type1_Fn_Basic_Functions.js
+node chapter_12_Funtions/98_Type2_Fn_With_Param_No_Return.js
+node chapter_12_Funtions/99_Type3_Fn_without_Param_Return_Type.js
+node chapter_12_Funtions/100_Type4_Fn_With_Param_With_Return.js
+node chapter_12_Funtions/101_Template_literal.js
+node chapter_12_Funtions/102_Fn_Expression.js
+node chapter_12_Funtions/103_Arrow_Fn.js
 ```
 
 ---
@@ -727,9 +779,9 @@ node chapter_11_Arrays/91_Transform_Array.js
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Chapter 12: Functions"]
-        N1[Function Declaration] --> N2[Arrow Functions]
-        N2 --> N3[Higher-Order Functions]
+    subgraph next["Next Up — Advanced JS"]
+        N1[Objects] --> N2[Callbacks]
+        N2 --> N3[Promises]
     end
 
     subgraph then["Then — Advanced JS"]
