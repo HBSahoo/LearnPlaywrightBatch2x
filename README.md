@@ -16,7 +16,7 @@ This repository is your **week-by-week course companion** for the LearnPlaywrigh
 
 > Content gets added **as we progress through the batch** — so check back after every class.
 >
-> **Last updated:** 27th May 2026 — Class code committed (Arrays: sort, slice, concat, checking + Functions basics)
+> **Last updated:** 1st Jun 2026 — Class code committed (Functions deep dive: arrow, IIFE, default/rest/spread params, scope, closures, higher-order & pure functions)
 
 ### What you'll learn
 
@@ -224,7 +224,21 @@ LearnPlaywrightBatch2x/
 │   ├── 100_Type4_Fn_With_Param_With_Return.js # Type 4: with param, with return
 │   ├── 101_Template_literal.js           # Template literals inside functions
 │   ├── 102_Fn_Expression.js              # Function expressions
-│   └── 103_Arrow_Fn.js                   # Arrow functions (ES6)
+│   ├── 103_Arrow_Fn.js                   # Arrow functions (ES6)
+│   ├── 104_Arrow_Fn_REAL.js              # Arrow fn: normal vs expression vs arrow
+│   ├── 105_IIFE.js                       # Immediately Invoked Function Expressions
+│   ├── 106_Default_Param_Fn.js           # Default parameters in functions
+│   ├── 107_IQ.js                         # Function interview questions
+│   ├── 108_Rest_Param_Fn.js              # Rest parameters (...args)
+│   ├── 109_IQ.js                         # Return values & hoisting IQ
+│   ├── 110_Spead_IQ.js                   # Spread operator with functions
+│   ├── 111_Scope._Fn.js                  # Global vs local scope in functions
+│   ├── 112_IQ.js                         # Nested & block scope IQ
+│   ├── 113_Closure.js                    # Closures — inner functions returned
+│   ├── 114_Closure.js                    # Closure counter example
+│   ├── 115_API_REAL_Closure.js           # Real-world closure: retry tracker
+│   ├── 116_Higher_Order_Fn.js            # Higher-order functions
+│   └── 117_Pure_Fn.js                    # Pure functions vs side effects
 │
 └── README.md                           👋 You are here
 ```
@@ -759,6 +773,20 @@ node chapter_11_Arrays/95_Array_Checking.js
 | `101_Template_literal.js` | Template Literals | Using backticks & `${}` inside functions |
 | `102_Fn_Expression.js` | Function Expression | Assigning functions to variables |
 | `103_Arrow_Fn.js` | Arrow Functions | ES6 arrow `=>` syntax, implicit return |
+| `104_Arrow_Fn_REAL.js` | Arrow in Practice | Same logic as normal / expression / arrow fn |
+| `105_IIFE.js` | IIFE | Immediately Invoked Function Expressions |
+| `106_Default_Param_Fn.js` | Default Parameters | Default values for function params |
+| `107_IQ.js` | Return Basics | Functions returning formatted strings |
+| `108_Rest_Param_Fn.js` | Rest Parameters | `...results` gathering args into an array |
+| `109_IQ.js` | Return & Hoisting | Return vs no-return, function hoisting gotchas |
+| `110_Spead_IQ.js` | Spread in Functions | Spreading arrays into function arguments |
+| `111_Scope._Fn.js` | Function Scope | Global vs local scope access |
+| `112_IQ.js` | Nested Scope | Nested & block scope interview question |
+| `113_Closure.js` | Closures | Returning inner functions that retain scope |
+| `114_Closure.js` | Closure Counter | Closure-based counter (increment/decrement/get) |
+| `115_API_REAL_Closure.js` | Real Closure | Retry tracker built with a closure |
+| `116_Higher_Order_Fn.js` | Higher-Order Fn | Functions that take/return functions |
+| `117_Pure_Fn.js` | Pure Functions | Pure vs impure functions, side effects |
 
 ### Run them
 
@@ -771,6 +799,20 @@ node chapter_12_Funtions/100_Type4_Fn_With_Param_With_Return.js
 node chapter_12_Funtions/101_Template_literal.js
 node chapter_12_Funtions/102_Fn_Expression.js
 node chapter_12_Funtions/103_Arrow_Fn.js
+node chapter_12_Funtions/104_Arrow_Fn_REAL.js
+node chapter_12_Funtions/105_IIFE.js
+node chapter_12_Funtions/106_Default_Param_Fn.js
+node chapter_12_Funtions/107_IQ.js
+node chapter_12_Funtions/108_Rest_Param_Fn.js
+node chapter_12_Funtions/109_IQ.js
+node chapter_12_Funtions/110_Spead_IQ.js
+node chapter_12_Funtions/111_Scope._Fn.js
+node chapter_12_Funtions/112_IQ.js
+node chapter_12_Funtions/113_Closure.js
+node chapter_12_Funtions/114_Closure.js
+node chapter_12_Funtions/115_API_REAL_Closure.js
+node chapter_12_Funtions/116_Higher_Order_Fn.js
+node chapter_12_Funtions/117_Pure_Fn.js
 ```
 
 ---
