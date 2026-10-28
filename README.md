@@ -16,7 +16,7 @@ This repository is your **week-by-week course companion** for the LearnPlaywrigh
 
 > Content gets added **as we progress through the batch** — so check back after every class.
 >
-> **Last updated:** 1st Jun 2026 — Class code committed (Functions deep dive: arrow, IIFE, default/rest/spread params, scope, closures, higher-order & pure functions)
+> **Last updated:** 3rd Jun 2026 — Class code committed (Strings: creation, properties, search & check, slice/substring, transform/replace/split/join, conversions + full String methods cheat sheet)
 
 ### What you'll learn
 
@@ -47,6 +47,7 @@ graph TB
             ch10["Ch 10: Loops ✅"]
             ch11["Ch 11: Arrays ✅"]
             ch12["Ch 12: Functions ✅"]
+            ch13s["Ch 13: Strings ✅"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
@@ -240,6 +241,15 @@ LearnPlaywrightBatch2x/
 │   ├── 116_Higher_Order_Fn.js            # Higher-order functions
 │   └── 117_Pure_Fn.js                    # Pure functions vs side effects
 │
+├── chapter_13_Strings/                   ✅ Strings — creation, properties, search, slice, transform, split/join
+│   ├── 118_Strings.js                    # String basics, template literals, multi-line, String()
+│   ├── 119_String_Properties.js          # length, index access, at(), charAt(), charCodeAt()
+│   ├── 120_Search_Check_Str.js           # includes, startsWith, endsWith, indexOf, lastIndexOf, search
+│   ├── 121_Substring.js                  # slice vs substring, negative indexing
+│   ├── 122_Transform_Str.js              # case, trim, replace/replaceAll, split & join
+│   ├── 123_SC.js                         # toString, Number, parseInt, parseFloat
+│   └── javascript_stringcheatsheet.md    # Quick reference: all common String methods
+│
 └── README.md                           👋 You are here
 ```
 
@@ -322,6 +332,7 @@ journey
 | 4 | Control Flow | Ch 5–7 | If/else, switch, loops |
 | 5 | Arrays & Functions | Ch 11–12 | Manipulate data confidently |
 | 6 | Strings & Objects | Ch 10, 13 | Use JS data structures |
+| 6 | Strings | Ch 13 ✅ | Master String methods & manipulation |
 | 7 | Async (Callbacks → Promises) | Ch 12–14 | Handle async work |
 | 8 | Async/Await + OOP | Ch 15–17 | Modern async, classes |
 | 9 | TypeScript | Ch 18–22 | Type-safe automation code |
@@ -813,6 +824,33 @@ node chapter_12_Funtions/114_Closure.js
 node chapter_12_Funtions/115_API_REAL_Closure.js
 node chapter_12_Funtions/116_Higher_Order_Fn.js
 node chapter_12_Funtions/117_Pure_Fn.js
+```
+
+---
+
+## 📖 What's in Chapter 13 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `118_Strings.js` | String Basics | Single vs double quotes, template literals, multi-line strings, `String()` |
+| `119_String_Properties.js` | Properties & Indexing | `length`, index access, `at()`, `charAt()`, `charCodeAt()` |
+| `120_Search_Check_Str.js` | Search & Check | `includes()`, `startsWith()`, `endsWith()`, `indexOf()`, `lastIndexOf()`, `search()` |
+| `121_Substring.js` | Slice / Substring | `slice()` vs `substring()`, negative indexing, `at()` |
+| `122_Transform_Str.js` | Transform & Split | `toUpperCase()`, `toLowerCase()`, `trim*()`, `replace()`, `replaceAll()`, `split()`, `join()`, `concat()` |
+| `123_SC.js` | String Conversion | `toString()`, `Number()`, `parseInt()`, `parseFloat()` |
+| `javascript_stringcheatsheet.md` | Cheat Sheet | Quick reference of all common String methods — search, slice, case, trim, replace, convert |
+
+### Run them
+
+```bash
+node chapter_13_Strings/118_Strings.js
+node chapter_13_Strings/119_String_Properties.js
+node chapter_13_Strings/120_Search_Check_Str.js
+node chapter_13_Strings/121_Substring.js
+node chapter_13_Strings/122_Transform_Str.js
+node chapter_13_Strings/123_SC.js
 ```
 
 ---
