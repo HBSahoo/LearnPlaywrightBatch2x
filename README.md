@@ -16,7 +16,7 @@ This repository is your **week-by-week course companion** for the LearnPlaywrigh
 
 > Content gets added **as we progress through the batch** — so check back after every class.
 >
-> **Last updated:** 3rd Jun 2026 — Class code committed (Strings: creation, properties, search & check, slice/substring, transform/replace/split/join, conversions + full String methods cheat sheet)
+> **Last updated:** 3rd Jun 2026 — Class code + live-class tasks committed (Strings: creation, properties, search & check, slice/substring, transform/replace/split/join, conversions + full String methods cheat sheet; plus String tasks — reverse/palindrome and anagram)
 
 ### What you'll learn
 
@@ -249,6 +249,15 @@ LearnPlaywrightBatch2x/
 │   ├── 122_Transform_Str.js              # case, trim, replace/replaceAll, split & join
 │   ├── 123_SC.js                         # toString, Number, parseInt, parseFloat
 │   └── javascript_stringcheatsheet.md    # Quick reference: all common String methods
+│
+├── Tasks_LiveClass_Code/                 ✅ Live-class tasks & assignments
+│   ├── 11May_Task01_diff_let_var_const.md    # Task: var vs let vs const
+│   ├── 11May_Task02_hoisting.md              # Task: Hoisting
+│   ├── 11May_Task03.md                       # Task: Practice questions
+│   ├── 11May_Task04.md                       # Task: Practice questions
+│   ├── 11May_Task05.js                       # Task: Coding exercise
+│   ├── 03Jun_Task06_PalindromReverseString.js # Task: Reverse string & palindrome check
+│   └── 03Jun_Task07_Anagram.js               # Task: Check if two strings are anagrams
 │
 └── README.md                           👋 You are here
 ```
@@ -851,6 +860,30 @@ node chapter_13_Strings/120_Search_Check_Str.js
 node chapter_13_Strings/121_Substring.js
 node chapter_13_Strings/122_Transform_Str.js
 node chapter_13_Strings/123_SC.js
+```
+
+---
+
+## 📖 What's in Tasks_LiveClass_Code (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `11May_Task01_diff_let_var_const.md` | var / let / const | Differences between the three declarations |
+| `11May_Task02_hoisting.md` | Hoisting | Hoisting behavior for var / let / const |
+| `11May_Task03.md` | Practice | Live-class practice questions |
+| `11May_Task04.md` | Practice | Live-class practice questions |
+| `11May_Task05.js` | Coding Exercise | Hands-on coding task |
+| `03Jun_Task06_PalindromReverseString.js` | Reverse & Palindrome | Reverse a string and check for palindrome |
+| `03Jun_Task07_Anagram.js` | Anagram | Check whether two strings are anagrams |
+
+### Run them
+
+```bash
+node Tasks_LiveClass_Code/11May_Task05.js
+node Tasks_LiveClass_Code/03Jun_Task06_PalindromReverseString.js
+node Tasks_LiveClass_Code/03Jun_Task07_Anagram.js
 ```
 
 ---
