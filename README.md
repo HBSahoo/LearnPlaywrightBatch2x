@@ -16,7 +16,7 @@ This repository is your **week-by-week course companion** for the LearnPlaywrigh
 
 > Content gets added **as we progress through the batch** — so check back after every class.
 >
-> **Last updated:** 3rd Jun 2026 — Class code + live-class tasks committed (Strings: creation, properties, search & check, slice/substring, transform/replace/split/join, conversions + full String methods cheat sheet; plus String tasks — reverse/palindrome and anagram)
+> **Last updated:** 5th Jun 2026 — Class code committed (Objects: creation, keys/values/entries, primitive vs reference, property descriptors, object methods, destructuring, spread, getters/setters, `let`/`const` with objects, plus real-world config & API-test objects)
 
 ### What you'll learn
 
@@ -48,16 +48,16 @@ graph TB
             ch11["Ch 11: Arrays ✅"]
             ch12["Ch 12: Functions ✅"]
             ch13s["Ch 13: Strings ✅"]
+            ch14o["Ch 14: Objects ✅"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
-            ch11["Ch 11: Objects"]
-            ch12["Ch 12: 2D Arrays"]
-            ch13["Ch 13: Callbacks"]
-            ch14["Ch 14: Promises"]
-            ch15["Ch 15: Async / Await"]
-            ch16["Ch 16: OOP - Classes"]
-            ch17["Ch 17: Inheritance"]
+            adv1["Ch 11: 2D Arrays"]
+            adv2["Ch 12: Callbacks"]
+            adv3["Ch 13: Promises"]
+            adv4["Ch 14: Async / Await"]
+            adv5["Ch 15: OOP - Classes"]
+            adv6["Ch 16: Inheritance"]
         end
 
         subgraph ts["🟦 TypeScript (Week 9)"]
@@ -250,6 +250,22 @@ LearnPlaywrightBatch2x/
 │   ├── 123_SC.js                         # toString, Number, parseInt, parseFloat
 │   └── javascript_stringcheatsheet.md    # Quick reference: all common String methods
 │
+├── chapter_14_Objects/                   ✅ Objects — creation, keys/values, reference vs primitive, destructuring, spread, get/set
+│   ├── 124_Objects.js                    # What an object is — key-value pairs in heap memory
+│   ├── 125_Objects2.js                   # Key/value basics + copy-by-reference demo
+│   ├── 126_Objects_Creation.js           # Two identical objects are not === equal
+│   ├── 127_Objects_REAL.js               # Real-world config object, add & delete properties
+│   ├── 128_Primitive_Ref.js              # Primitive copy vs object reference copy
+│   ├── 129_Ob_Examples.js                # JSON-style vs JS object literals
+│   ├── 130_IQ.js                         # Dot vs bracket access, dynamic keys, property descriptor
+│   ├── 131_Object_Fn.js                  # Objects holding methods
+│   ├── 132_Obj_Decon.js                  # Destructuring, renaming, defaults, nested objects
+│   ├── 133_Spead.js                      # Spread copy & mutating object properties
+│   ├── 134_Objects_GET_SET_Methods.js    # get / set accessors with this
+│   ├── 135_IQ                            # Object.keys / values / entries + for...in iteration
+│   ├── 136_Obj_REAL.js                   # Environment, API response & config objects
+│   └── 137_Let_const_obj.js              # let vs const with objects — mutate yes, reassign no
+│
 ├── Tasks_LiveClass_Code/                 ✅ Live-class tasks & assignments
 │   ├── 11May_Task01_diff_let_var_const.md    # Task: var vs let vs const
 │   ├── 11May_Task02_hoisting.md              # Task: Hoisting
@@ -342,6 +358,7 @@ journey
 | 5 | Arrays & Functions | Ch 11–12 | Manipulate data confidently |
 | 6 | Strings & Objects | Ch 10, 13 | Use JS data structures |
 | 6 | Strings | Ch 13 ✅ | Master String methods & manipulation |
+| 6 | Objects | Ch 14 ✅ | Build & manipulate JS objects |
 | 7 | Async (Callbacks → Promises) | Ch 12–14 | Handle async work |
 | 8 | Async/Await + OOP | Ch 15–17 | Modern async, classes |
 | 9 | TypeScript | Ch 18–22 | Type-safe automation code |
@@ -860,6 +877,48 @@ node chapter_13_Strings/120_Search_Check_Str.js
 node chapter_13_Strings/121_Substring.js
 node chapter_13_Strings/122_Transform_Str.js
 node chapter_13_Strings/123_SC.js
+```
+
+---
+
+## 📖 What's in Chapter 14 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `124_Objects.js` | Object Basics | Key-value pairs stored in heap memory, variables hold references |
+| `125_Objects2.js` | Keys & Values | Dot vs bracket access, JSON-style keys, copy by reference, `===` on shared refs |
+| `126_Objects_Creation.js` | Object Identity | Two objects with the same data are **not** `===` equal |
+| `127_Objects_REAL.js` | Real Config Object | Add properties dynamically, `delete`, browser-based test gating |
+| `128_Primitive_Ref.js` | Primitive vs Reference | Copy by value (primitives) vs copy by reference (objects, arrays, functions) |
+| `129_Ob_Examples.js` | Object Literals | JSON-style quoted keys vs plain JS object keys |
+| `130_IQ.js` | Access & Descriptors | Dot/bracket access, dynamic `key` variables, `Object.getOwnPropertyDescriptor()` |
+| `131_Object_Fn.js` | Methods in Objects | Objects that hold functions and shared `this` state |
+| `132_Obj_Decon.js` | Destructuring | Basic, renaming, default values, nested object destructuring |
+| `133_Spead.js` | Spread | `{...obj}` shallow copy, mutating vs reassigning properties |
+| `134_Objects_GET_SET_Methods.js` | Getters / Setters | `get` / `set` accessors using `this` |
+| `135_IQ` | Iteration | `Object.keys()`, `Object.values()`, `Object.entries()`, `for...in`, `forEach` |
+| `136_Obj_REAL.js` | Real-World Objects | Environment config, expected API response, test config with `process.env` |
+| `137_Let_const_obj.js` | let vs const with Objects | `const` objects can be mutated but not reassigned |
+
+### Run them
+
+```bash
+node chapter_14_Objects/124_Objects.js
+node chapter_14_Objects/125_Objects2.js
+node chapter_14_Objects/126_Objects_Creation.js
+node chapter_14_Objects/127_Objects_REAL.js
+node chapter_14_Objects/128_Primitive_Ref.js
+node chapter_14_Objects/129_Ob_Examples.js
+node chapter_14_Objects/130_IQ.js
+node chapter_14_Objects/131_Object_Fn.js
+node chapter_14_Objects/132_Obj_Decon.js
+node chapter_14_Objects/133_Spead.js
+node chapter_14_Objects/134_Objects_GET_SET_Methods.js
+node chapter_14_Objects/135_IQ
+node chapter_14_Objects/136_Obj_REAL.js
+node chapter_14_Objects/137_Let_const_obj.js
 ```
 
 ---
