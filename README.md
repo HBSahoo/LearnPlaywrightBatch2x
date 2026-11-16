@@ -16,7 +16,7 @@ This repository is your **week-by-week course companion** for the LearnPlaywrigh
 
 > Content gets added **as we progress through the batch** — so check back after every class.
 >
-> **Last updated:** 5th Jun 2026 — Class code committed (Objects: creation, keys/values/entries, primitive vs reference, property descriptors, object methods, destructuring, spread, getters/setters, `let`/`const` with objects, plus real-world config & API-test objects)
+> **Last updated:** 8th Jun 2026 — Class code committed (2D Arrays: rows/columns, grid vs matrix, indexing, iteration with `for` / `for...of` / `forEach`, real test-matrix reporting, `map` + `reduce` on rows, filtering failed suite results, star pattern printing, plus `testData.csv` and new Objects interview notes)
 
 ### What you'll learn
 
@@ -49,6 +49,7 @@ graph TB
             ch12["Ch 12: Functions ✅"]
             ch13s["Ch 13: Strings ✅"]
             ch14o["Ch 14: Objects ✅"]
+            ch15a["Ch 15: 2D Arrays ✅"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
@@ -264,7 +265,16 @@ LearnPlaywrightBatch2x/
 │   ├── 134_Objects_GET_SET_Methods.js    # get / set accessors with this
 │   ├── 135_IQ                            # Object.keys / values / entries + for...in iteration
 │   ├── 136_Obj_REAL.js                   # Environment, API response & config objects
-│   └── 137_Let_const_obj.js              # let vs const with objects — mutate yes, reassign no
+│   ├── 137_Let_const_obj.js              # let vs const with objects — mutate yes, reassign no
+│   └── Interview.md                      # Interview notes: why const for object references
+│
+├── chapter_15_2D_Array/                  ✅ 2D Arrays — rows/columns, grids, iteration, patterns
+│   ├── 138_2D_Array.js                   # 1D vs 2D arrays, nested loop traversal
+│   ├── 139_2d.js                         # Rows vs columns, 2D array vs grid, indexing
+│   ├── 140_REAL.js                       # Real test matrix — for / for...of / forEach
+│   ├── 141_2d_Array_Fn.js                # map + reduce row sums, filtering failed tests
+│   ├── 142_IQ_Right_Pattern_Py.js        # Star pattern (right triangle) with nested loops
+│   └── testData.csv                      # Sample test data — login cases & expected result
 │
 ├── Tasks_LiveClass_Code/                 ✅ Live-class tasks & assignments
 │   ├── 11May_Task01_diff_let_var_const.md    # Task: var vs let vs const
@@ -297,7 +307,7 @@ LearnPlaywrightBatch2x/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/PramodDutta/LearnPlaywrightBatch2x.git
+git clone https://github.com/HBSahoo/LearnPlaywrightBatch2x.git
 cd LearnPlaywrightBatch2x
 
 # 2. Verify your setup
@@ -359,6 +369,7 @@ journey
 | 6 | Strings & Objects | Ch 10, 13 | Use JS data structures |
 | 6 | Strings | Ch 13 ✅ | Master String methods & manipulation |
 | 6 | Objects | Ch 14 ✅ | Build & manipulate JS objects |
+| 6 | 2D Arrays | Ch 15 ✅ | Traverse rows & columns, build grids |
 | 7 | Async (Callbacks → Promises) | Ch 12–14 | Handle async work |
 | 8 | Async/Await + OOP | Ch 15–17 | Modern async, classes |
 | 9 | TypeScript | Ch 18–22 | Type-safe automation code |
@@ -923,6 +934,41 @@ node chapter_14_Objects/137_Let_const_obj.js
 
 ---
 
+## 📖 What's in Chapter 15 (Available Now)
+
+### Files
+
+| File | Topic | What you'll learn |
+|------|-------|-------------------|
+| `138_2D_Array.js` | 1D vs 2D Arrays | Contiguous single-dimensional arrays vs nested (multi-dimensional) arrays, nested `for` traversal |
+| `139_2d.js` | Rows & Columns | `matrix_2D` (1×4) vs `grid` (3×3), row/column indexing, `arr.length` and `arr[0].length` |
+| `140_REAL.js` | Real Test Matrix | Test results as a 2D array — `for`, `for...of`, and `forEach`, plus `console.log` vs `process.stdout.write` |
+| `141_2d_Array_Fn.js` | Array Methods on Rows | `map` + `reduce` to compute per-student totals, finding every failed case with `includes("fail")` |
+| `142_IQ_Right_Pattern_Py.js` | Pattern Printing | Right-triangle star pattern using nested loops and string building |
+| `testData.csv` | Sample Test Data | Login test cases — `username`, `passwrod`, `expected_Result` |
+
+### Run them
+
+```bash
+node chapter_15_2D_Array/138_2D_Array.js
+node chapter_15_2D_Array/139_2d.js
+node chapter_15_2D_Array/140_REAL.js
+node chapter_15_2D_Array/141_2d_Array_Fn.js
+node chapter_15_2D_Array/142_IQ_Right_Pattern_Py.js
+```
+
+---
+
+## 🧠 Interview Notes (Available Now)
+
+`chapter_14_Objects/Interview.md` — curated interview Q&A that grows with the curriculum.
+
+| Topic | Question | Key takeaway |
+|-------|----------|--------------|
+| Objects | Why declare object references with `const` instead of `let`/`var`? | `const` locks the *binding*, not the contents — mutate properties freely, but reassignment throws. Use spread for a changed copy; `Object.freeze()` for true immutability. |
+
+---
+
 ## 📖 What's in Tasks_LiveClass_Code (Available Now)
 
 ### Files
@@ -952,7 +998,7 @@ node Tasks_LiveClass_Code/03Jun_Task07_Anagram.js
 ```mermaid
 graph TD
     subgraph next["Next Up — Advanced JS"]
-        N1[Objects] --> N2[Callbacks]
+        N1[2D Arrays] --> N2[Callbacks]
         N2 --> N3[Promises]
     end
 
